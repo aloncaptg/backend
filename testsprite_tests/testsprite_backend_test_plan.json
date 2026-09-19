@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TC001",
+    "title": "postapiregisteruserwithvaliddetails",
+    "description": "Test user registration with valid user details to ensure a new user account is created successfully and returns status 201."
+  },
+  {
+    "id": "TC002",
+    "title": "postapiloginwithvalidcredentials",
+    "description": "Test user login with valid credentials to verify authentication token is returned with status 200."
+  },
+  {
+    "id": "TC003",
+    "title": "postapiloginwithinvalidcredentials",
+    "description": "Test user login with invalid credentials to confirm 401 unauthorized error is returned and no token is issued."
+  },
+  {
+    "id": "TC004",
+    "title": "postapilogoutwithvalidtoken",
+    "description": "Test user logout with a valid authentication token to ensure session is terminated and status 200 is returned."
+  },
+  {
+    "id": "TC005",
+    "title": "getapiitemswithvalidtoken",
+    "description": "Test retrieving inventory items with a valid auth token to verify a 200 response with the inventory list."
+  },
+  {
+    "id": "TC006",
+    "title": "postapiitemswithvaliddataandtoken",
+    "description": "Test creating an inventory item with valid data and auth token to confirm item creation with status 201."
+  },
+  {
+    "id": "TC007",
+    "title": "postapiitemswithinvaliddata",
+    "description": "Test creating an inventory item with invalid or incomplete data to ensure 422 validation error is returned and no item is created."
+  },
+  {
+    "id": "TC008",
+    "title": "postapiorderswithvaliddataandtoken",
+    "description": "Test creating an order with valid order data and auth token to verify order creation with status 201."
+  },
+  {
+    "id": "TC009",
+    "title": "getapideliveriesmywithvalidtoken",
+    "description": "Test retrieving assigned deliveries for a driver with valid auth token to confirm 200 response with delivery list."
+  },
+  {
+    "id": "TC010",
+    "title": "postapiv4wasteswithvaliddataandtoken",
+    "description": "Test submitting a waste log with valid auth token and waste details to ensure waste record is created with status 201 and inventory updates accordingly."
+  }
+]
